@@ -1,6 +1,10 @@
 html{
     scroll-behavior: smooth;
 }
+
+span {
+  color:rgb(37, 112, 216);
+}
 section {
     font-family: 'Staatliches', cursive;
 }

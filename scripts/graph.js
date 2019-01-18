@@ -115,9 +115,9 @@ class Vertex {
 let arraySize;
 let vertexArray = [];
 
-if (window.width <= 400) {
+if (window.innerWidth <= 400) {
   arraySize = 15;
-} else if (window.width <= 800) {
+} else if (window.innerWidth <= 800) {
   arraySize = 25;
 } else {
   arraySize = 50;

@@ -1,0 +1,98 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  color: #ffffff;
+  background-color: rgb(2, 14, 31);
+  /* font-family: "Karla", sans-serif; */
+  font-family: 'Staatliches', cursive;
+}
+
+#home {
+  z-index: 0;
+  color: #ffffff;
+  position: relative;
+}
+
+#name {
+  padding-top: 100px;
+  padding-left: 5px;
+}
+
+#navigation {
+  z-index: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  margin-top: 7em;
+}
+
+.nav-item :hover {
+  color: lime;
+  text-decoration: underline;
+}
+
+#myCanvas {
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+}
+
+footer {
+  z-index: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  #name {
+    font-size: 60px;
+  }
+
+  .descriptors {
+    font-size: 30px;
+  }
+
+  #portfolioLink{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .descriptors {
+    font-size: 25px;
+  }
+
+  #name {
+    font-size: 50px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .descriptors {
+    font-size: 15px;
+    display: block;
+  }
+
+  #name {
+    font-size: 30px;
+  }
+
+  #portfolioLink{
+    font-size: 15px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Anthony Rodriguez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anthony Rodriguez | Computer Programmer and Scholar</title>
+    <link rel="stylesheet" type="text/css" href="./styles/portfolioStyle.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/portfolioMediaStyles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/navStyle.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="#about-section">About</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#contact-section">Contact</a>
+    </div>
+
+    <!--About Section-->
+    <section id="about-section">
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()" style="font-size: 30px; color:rgb(37, 112, 216); margin-left: 0.5em; cursor: pointer;">&#9776</span>
+        <h1 class="display-2 section-head" id="about-head">About</h1>
+        <div id="container-fluid section-content" style="color: #ffffff;background-color:rgb(37, 112, 216);">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <img class="img-fluid" id="self-photo" src="./images/Linkedin photo.jpg" alt="image of self">
+                </div>
+                <div class="col-lg-9 col-md-8">
+                    <h3 style="margin-top:1em;" id="aboutMe-head">About Me:</h3>
+                    <p style="font-family: Karla, sans-serif; margin-right: 1em;" id="aboutMe-content">
+                        I am a senior studying computer science at the University of California, Berkeley.
+                        I love to program and, I love to learn about anything related to computer science, technology
+                        and mathematics.<br><br> My short-term goals are: obtaining a software engineering internship,
+                        completing the devolpment and design of this website, and learn more about the design and
+                        analysis of algorithms and full-stack web development.<br><br>
+                        My long-term goals are: completing my undergraduate education,
+                        obtain a graduate degree in computer science.
+                    </p>
+                </div>
+            </div>
+            <h3 style="margin-top:1em;" id="skills-head">What I Know:</h3>
+            <div class="row">
+                <div class="col-sm col- skills-lists" id="language-skills">
+                    <h5 style="text-decoration: underline;">Languages</h5>
+                    <ul style="margin-left: 0; list-style-type:none;">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>C#</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>RISC-V</li>
+                    </ul>
+                </div>
+                <div class="col-sm col- skills-lists">
+                    <h5 style="text-decoration: underline;">Libraries</h5>
+                    <ul style="margin-left: 0; list-style-type:none;">
+                        <li>NumPy</li>
+                        <li>Matplotlib</li>
+                    </ul>
+                </div>
+                <div class="col-sm col- skills-lists">
+                    <h5 style="text-decoration: underline;">Frameworks</h5>
+                    <ul style="margin-left: 0; list-style-type:none;">
+                        <li>JUnit</li>
+                        <li>Bootstrap 4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects Section-->
+    <section id="projects-section">
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()" style="font-size: 30px; color:rgb(37, 112, 216); margin-left: 0.5em; cursor: pointer;">&#9776</span>
+        <h1 class="display-2 section-head" style="margin-top:1em;" id="projects-head">Projects</h1>
+        <div id="section-content" style="background-color: rgb(37, 112, 216);">
+            <h2 style="text-align: center; margin-top: 1em; border-top: solid; border-bottom: solid">Course Projects</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Hog</h3>
+                            <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/hog/" target="_blank">
+                                <img class="project-image" src="./images/dice.png" alt="dice">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://cs61a.org/" target="_blank" style="color: #ffffff">
+                                    CS61A: <i>Structure and Interpretation of Computer Programs</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language:</b> Python</p>
+                            <p class="project-descriptor"><b>Description:</b> Developed a simulator and multiple
+                                strategies
+                                for a dice game named Hog. The purpose of this project was
+                                for the student to use control statements and higher-order functions.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Yelp Maps</h3>
+                            <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/maps/" target="_blank">
+                                <img class="project-image" src="./images/yelpMaps.png" alt="yelp map">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://cs61a.org/" target="_blank" style="color: #ffffff">
+                                    CS61A: <i>Structure and Interpretation of
+                                        Computer Programs</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language:</b> Python</p>
+                            <p class="project-descriptor"><b>Description:</b> Created a visualization of restaurant
+                                ratings using machine learning and the Yelp academic dataset.
+                                In this visualization, Berkeley is segmented into regions,
+                                where each region is shaded by the predicted rating of the
+                                closest restaurant. The visualization is a Varoni Diagram.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center;">Ants VS SomeBees</h3>
+                            <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/ants/" target="_blank">
+                                <img class="project-image" src="./images/antssomebees.png" alt="ants vs somebees">
+                            </a>
+
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://cs61a.org/" target="_blank" style="color: #ffffff">
+                                    CS61A: <i>Structure and Interpretation of
+                                        Computer Programs</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language:</b> Python</p>
+                            <p class="project-descriptor"><b>Description:</b> Created a tower defense game called
+                                Ants Vs. SomeBees. This project combines functional and object-oriented programming
+                                paradigms. <br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 style="margin-top: 1em; text-align: center; border-bottom: solid; border-top: solid;">Personal Projects</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Personal Website</h3>
+                            <img class="project-image" src="./images/homescreen.png" alt="dice">
+                            <p class="project-descriptor"><b>Languages:</b> HTML5, CSS, JavaScript</p>
+                            <p class="project-descriptor"><b>Framework:</b> Bootstrap 4</p>
+                            <p class="project-descriptor"><b>Description:</b>
+                                First version of this website.
+                            </p>
+                            <a href="https://github.com/aRod209/Website-V1" target="_blank">
+                                <i class="fab fa-github" style="color:#ffffff; margin:1em; float:right; font-size:24px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 id="projects-message" style="text-align: center; margin-top: 1em;">
+                This site is still being devoloped. More course and personal projects
+                will be added in the near future.
+            </h5>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact-section">
+        <span onclick="openNav()" style="font-size: 30px; color:rgb(37, 112, 216); margin-left: 0.5em; cursor: pointer;">&#9776</span>
+        <h1 class="display-2 section-head" id="contact-head" style="margin-top:1em;">Contact</h1>
+        <div id="section-content" style="background-color: rgb(37, 112, 216);">
+            <h2 id="contact-message">
+                I am currently looking for an internship!<br>
+                If it involves programming and problem-soliving, please contact me.
+                </h1>
+                <h2 class="contact-email" style="margin-top: 5em;">Send me an email:</h2>
+                <h3 class="contact-email" style="font-family: Karla, sans-serif;">anthony_rodriguez@berkeley.edu</h3>
+                <a href="https://www.linkedin.com/in/anthonyfrodriguez/" target="_blank">
+                    <i class="fab fa-linkedin-in" id="linkedIn-icon" style="color:#ffffff; margin:1em; float:right; font-size: 24px;"></i>
+                </a>
+                <a href="https://github.com/aRod209" target="_blank">
+                    <i class="fab fa-github" style="color:#ffffff; margin:1em; float:right; font-size:24px;"></i>
+                </a>
+        </div>
+    </section>
+
+    <footer style="color: rgb(37, 112, 216); text-align: center;">
+        <b>This website was developed and designed by Anthony Rodriguez</b>
+    </footer>
+
+    <script src="./scripts/nav.js"></script>
+</body>
+
+</html>

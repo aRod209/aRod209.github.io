@@ -1,0 +1,92 @@
+html{
+    scroll-behavior: smooth;
+}
+section {
+    font-family: 'Staatliches', cursive;
+}
+
+.section-head {
+    color: rgb(37, 112, 216);
+    text-align: center;
+}
+
+#section-content {
+    color: #ffffff;
+    overflow: hidden;
+}
+
+img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+#self-photo {
+  border-radius: 8px;
+  width: 275px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 30px;
+  float: left;
+}
+  
+#self-photo:hover {
+  filter: grayscale(0%);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#skills-head {
+  margin-left: 1em;
+}
+
+.skills-lists {
+  margin-left: 2em;
+}
+
+.project-descriptions{
+  margin: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  background-color: rgb(28, 88, 173);
+  overflow: hidden;
+  height: 40em;
+  box-shadow: 10px 10px 5px rgb(57, 61, 117);
+}
+
+.project-descriptor {
+  font-family: Karla, sans-serif;
+}
+
+.project-image {
+  width: 200px;
+  height: 200px;
+  float: none;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#contact-message {
+  font-size: 2vw;
+  text-align: center;
+  margin-top:2em;
+  margin-right: 4em;
+  margin-left: 4em;
+  background-color: rgb(28, 88, 173);
+  box-shadow: 10px 10px 5px rgb(57, 61, 117);
+}
+
+.contact-email {
+  text-align: center;
+  font-size: 2vw;
+}

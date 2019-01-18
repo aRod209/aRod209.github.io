@@ -1,0 +1,64 @@
+@media screen and (max-width: 991px) {
+    #self-photo {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 975px) {
+    .skills-lists {
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 817px) {
+    #self-photo {
+        width: 220px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    #skills-head {
+        margin-left: 1em;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    #aboutMe-head {
+        margin-left: 1em;
+    }
+
+    #aboutMe-content {
+        margin-left: 1em;
+    }
+
+    .contact-email {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #about-head, #projects-head, #contact-head {
+        font-size: 70px;
+    }
+
+    #contact-message {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .skills-lists {
+        text-align: center;
+    }
+
+    #projects-message {
+        font-size: 15px;
+    }
+}

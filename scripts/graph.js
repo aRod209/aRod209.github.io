@@ -7,16 +7,6 @@ canvas.height = window.innerHeight;
 // c stands for Context
 var c = canvas.getContext("2d");
 
-// var mouse = {
-//   x: undefined,
-//   y: undefined
-// };
-
-// document.getElementById("home").addEventListener("mousemove", function(event) {
-//   mouse.x = event.x;
-//   mouse.y = event.y;
-// });
-
 document.getElementById("home").addEventListener("click", function (event) {
   vertexArray.push(
     new Vertex(
@@ -115,7 +105,7 @@ class Vertex {
 let arraySize;
 let vertexArray = [];
 
-if (window.innerWidth <= 400) {
+if (window.innerWidth <= 415) {
   arraySize = 15;
 } else if (window.innerWidth <= 800) {
   arraySize = 25;

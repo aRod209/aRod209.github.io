@@ -112,9 +112,16 @@ class Vertex {
   }
 }
 
+let arraySize;
 let vertexArray = [];
 
-for (let i = 0; i < 50; i++) {
+if (window.width <= 800) {
+  arraySize = 25;
+} else {
+  arraySize = 50;
+}
+
+for (let i = 0; i < arraySize; i++) {
   let radius = 5;
   let x = randomIntFromRange(radius, window.innerWidth - radius);
   let y = randomIntFromRange(radius, window.innerHeight - radius);

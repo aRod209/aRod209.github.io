@@ -2,8 +2,12 @@ html{
     scroll-behavior: smooth;
 }
 
-span {
+.nav-bars {
   color:rgb(37, 112, 216);
+  margin-left: 0.5em;
+  cursor: pointer;
+  font-size: 30px;
+  padding-top: 0.5em;
 }
 section {
     font-family: 'Staatliches', cursive;

@@ -54,7 +54,8 @@ footer {
   color: #ffffff;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) 
+              and (orientation: portrait) {
   #name {
     font-size: 60px;
   }
@@ -67,7 +68,8 @@ footer {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px)
+              and (orientation: portrait) {
   #description {
     font-size: 25px;
   }
@@ -78,7 +80,8 @@ footer {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px)
+                   and (orientation: portrait) {
   #description {
     font-size: 15px;
     display: block;

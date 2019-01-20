@@ -29,7 +29,7 @@ document.getElementById("home").addEventListener("click", function (event) {
 window.addEventListener('resize', resizeCanvas, false);
 window.addEventListener('orientationchange', resizeCanvas, false);
 
-function resizeCanvas(newWidth, newHeight) {
+function resizeCanvas() {
   // Set up temporary canvas
   let tempCanvas = document.createElement('canvas');
   tempCanvas.width = canvas.width;

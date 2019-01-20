@@ -26,10 +26,13 @@ document.getElementById("home").addEventListener("click", function (event) {
 });
 
 // Resizes canvas based on window's current width and height
-window.addEventListener("resize", function (event) {
+window.addEventListener('resize', resizeCanvas, false);
+window.addEventListener('orientationchange', resizeCanvas, false);
+
+function resizeCanvas() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-});
+}
 
 // animate canvas
 function animate() {

@@ -30,9 +30,22 @@ window.addEventListener('resize', resizeCanvas, false);
 window.addEventListener('orientationchange', resizeCanvas, false);
 
 function resizeCanvas(newWidth, newHeight) {
+  // Set up temporary canvas
+  let tempCanvas = document.createElement('canvas');
+  tempCanvas.width = canvas.width;
+  tempCanvas.height = canvas.height;
+  let tmpCtx = tempCanvas.getContext('2d');
+
+  // Copy to temporary canvas
+  tmpCtx.drawImage(canvas, 0, 0);
+
   // Resize original canvas
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
+
+  // Copy back to resized canvas
+  c = canvas.getContext('2d');
+  c.drawImage(tempCanvas, 0, 0, tempCanvas.width, tempCanvas.height, 0, 0, canvas.width, canvas.height);
 }
 
 // animate canvas

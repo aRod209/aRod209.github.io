@@ -26,26 +26,13 @@ document.getElementById("home").addEventListener("click", function (event) {
 });
 
 // Resizes canvas based on window's current width and height
-window.addEventListener('resize', resizeCanvas, false);
-window.addEventListener('orientationchange', resizeCanvas, false);
+window.addEventListener('resize', function () { resizeCanvas(window.innerWidth, window.innerHeight); }, false);
+window.addEventListener('orientationchange', function () { resizeCanvas(window.innerHeight, window.innerWidth); }, false);
 
-function resizeCanvas() {
-  // Set up temporary canvas
-  var tempCanvas = document.createElement('canvas');
-  tempCanvas.width = canvas.width;
-  tempCanvas.height = canvas.height;
-  tmpCtx = tempCanvas.getContext('2d');
-
-  // Copy to temporary canvas
-  tempCanvas.drawImage(canvas, 0, 0);
-
+function resizeCanvas(newWidth, newHeight) {
   // Resize original canvas
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  // Copy back to resized canvas
-  c = canvas.getContext('2d');
-  c.drawImage(tempCanvas, 0, 0, tempCanvas.width, tempCanvas.height, 0, 0, canvas.width, canvas.height);
+  canvas.width = newWidth;
+  canvas.height = newHeight;
 }
 
 // animate canvas

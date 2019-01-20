@@ -101,6 +101,10 @@ footer {
   #name {
     font-size: 30px;
   }
+
+  #description {
+    font-size: 15px;
+  }
   .portfolio-link {
     font-size: 15px;
   }

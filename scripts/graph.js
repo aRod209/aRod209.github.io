@@ -26,13 +26,13 @@ document.getElementById("home").addEventListener("click", function (event) {
 });
 
 // Resizes canvas based on window's current width and height
-window.addEventListener('resize', function () { resizeCanvas(window.innerWidth, window.innerHeight); }, false);
-window.addEventListener('orientationchange', function () { resizeCanvas(window.innerHeight, window.innerWidth); }, false);
+window.addEventListener('resize', resizeCanvas, false);
+window.addEventListener('orientationchange', resizeCanvas, false);
 
 function resizeCanvas(newWidth, newHeight) {
   // Resize original canvas
-  canvas.width = newWidth;
-  canvas.height = newHeight;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 }
 
 // animate canvas
@@ -48,13 +48,10 @@ function animate() {
 /* ***** Initialize the vertices on the canvas ***** */
 function init() {
 
-  if (window.innerWidth <= 415) {
-    arraySize = 15;
-  } else if (window.innerWidth <= 800) {
-    arraySize = 25;
-  } else {
-    arraySize = 50;
-  }
+  if (window.innerWidth <= 360) { arraySize = 10; }
+  else if (window.innerWidth <= 415) { arraySize = 15; }
+  else if (window.innerWidth <= 800) { arraySize = 25; }
+  else { arraySize = 50; }
 
   for (let i = 0; i < arraySize; i++) {
     let radius = 5;

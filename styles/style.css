@@ -100,6 +100,9 @@ footer {
   }
 }
 
+/* For anything smaller than a standard laptop that is in
+   landscape orientation
+*/
 @media screen and (max-width: 1200px)
               and (orientation: landscape) {
   #name {

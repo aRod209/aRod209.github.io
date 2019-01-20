@@ -25,7 +25,8 @@ document.getElementById("home").addEventListener("click", function (event) {
   );
 });
 
-// Resizes canvas based on window's current width and height
+// Resizes canvas based on window's current width and height.
+// scroll was added to fix a bug in mobile web browsers.
 window.addEventListener('resize', resizeCanvas, false);
 window.addEventListener('orientationchange', resizeCanvas, false);
 window.addEventListener('scroll', resizeCanvas, false);

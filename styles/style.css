@@ -100,7 +100,8 @@ footer {
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 1200px)
+              and (orientation: landscape) {
   #name {
     font-size: 30px;
   }

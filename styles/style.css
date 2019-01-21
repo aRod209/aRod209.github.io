@@ -16,6 +16,7 @@ section {
   z-index: 0;
   color: #ffffff;
   position: relative;
+  overflow: auto;
 }
 
 #name {

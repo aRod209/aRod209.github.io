@@ -10,6 +10,6 @@ document.getElementById("contact-anchor").addEventListener("click", function () 
     document.getElementById("contact-section").scrollIntoView();
 })
 
-export function scrollTo(str) {
+function scrollTo(str) {
     document.getElementById(str).scrollIntoView();
 }

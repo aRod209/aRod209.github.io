@@ -1,9 +1,11 @@
+import { scrollTo } from './portfolio.js';
+
 document.getElementById("projects-anchor").addEventListener("click", function () {
     window.location.href = 'https://arod209.github.io/portfolio.html'
-    document.getElementById("projects-section").scrollIntoView();
+    scrollTo("projects-section");
 })
 
 document.getElementById("contact-anchor").addEventListener("click", function () {
     window.location.href = 'https://arod209.github.io/portfolio.html'
-    document.getElementById("contact-section").scrollIntoView();
+    scrollTo("contact-section");
 })

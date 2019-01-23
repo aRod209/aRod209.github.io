@@ -9,3 +9,7 @@ document.getElementById("projects-anchor").addEventListener("click", function ()
 document.getElementById("contact-anchor").addEventListener("click", function () {
     document.getElementById("contact-section").scrollIntoView();
 })
+
+export function scrollTo(str) {
+    document.getElementById(str).scrollIntoView();
+}

@@ -29,25 +29,17 @@ document.getElementById("home").addEventListener("click", function (event) {
 // scroll was added to fix a bug in mobile web browsers.
 window.addEventListener('resize', resizeCanvas, false);
 window.addEventListener('orientationchange', resizeCanvas, false);
-window.addEventListener('scroll', resizeCanvas, false);
 
 function resizeCanvas() {
-  // Set up temporary canvas
-  let tempCanvas = document.createElement('canvas');
-  tempCanvas.width = canvas.width;
-  tempCanvas.height = canvas.height;
-  let tmpCtx = tempCanvas.getContext('2d');
-
-  // Copy to temporary canvas
-  tmpCtx.drawImage(canvas, 0, 0);
+  // Copy canvas as image data
+  var imgData = c.getImageData(0, 0, canvas.width, canvas.height);
 
   // Resize original canvas
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
   // Copy back to resized canvas
-  c = canvas.getContext('2d');
-  c.drawImage(tempCanvas, 0, 0, tempCanvas.width, tempCanvas.height, 0, 0, canvas.width, canvas.height);
+  c.putImageData(imgData, 0, 0);
 }
 
 // animate canvas

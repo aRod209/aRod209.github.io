@@ -1,6 +1,6 @@
 /* ***** Import statements ***** */
 import { Vertex } from './vertex.js';
-import { distance, randomIntFromRange } from './utilities.js';
+import { distance, randomIntFromRange, getNumVertices } from './utilities.js';
 
 /* ***** Global variables ***** */
 var canvas = document.getElementById("myCanvas");
@@ -54,12 +54,7 @@ function animate() {
 
 /* ***** Initialize the vertices on the canvas ***** */
 function init() {
-
-  if (window.innerWidth <= 360) { arraySize = 10; }
-  else if (window.innerWidth <= 415) { arraySize = 15; }
-  else if (window.innerWidth <= 800) { arraySize = 25; }
-  else { arraySize = 50; }
-
+  arraySize = getNumVertices();
   for (let i = 0; i < arraySize; i++) {
     let radius = 5;
     let x = randomIntFromRange(radius, window.innerWidth - radius);

@@ -18,5 +18,5 @@ export function getNumVertices() {
     if (window.innerWidth <= 360 || window.innerHeight <= 360) { return 10; }
     else if (window.innerWidth <= 415 || window.innerHeight <= 415) { return 15; }
     else if (window.innerWidth <= 800 || window.innerHeight <= 800) { return 30; }
-    return 40;
+    return 41;
 }

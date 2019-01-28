@@ -67,7 +67,7 @@ footer {
     font-size: 30px;
   }
 
-  .portfolioLink{
+  .portfolio-link{
     font-size: 30px;
   }
 }
@@ -94,8 +94,8 @@ footer {
     font-size: 30px;
   }
 
-  .portfolioLink{
-    font-size: 15px;
+  .portfolio-link{
+    font-size: 1em;
   }
 
   footer {
@@ -109,7 +109,7 @@ footer {
 @media screen and (max-width: 1200px)
               and (orientation: landscape) {
   #name {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   #description {

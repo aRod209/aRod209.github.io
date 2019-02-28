@@ -1,0 +1,47 @@
+#page-header {
+    color: rgb(46, 121, 226);
+    font-size: 3em;
+}
+#b61-header, #a61-header {
+    font-size: 3em;
+}
+
+.course-header {
+    font-size: 3em;
+}
+
+@media screen and (max-width: 1080px) {
+    #a61-header, #b61-header {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    #a61-header {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    #a61-header {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #a61-header {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    #page-header {
+        font-size: 40px;
+    }
+
+    #b61-header {
+        font-size: 35px;
+    }
+}

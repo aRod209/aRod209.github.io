@@ -3,13 +3,13 @@ import { c, vertexArray } from './graph.js';
 import { distance } from './utilities.js';
 
 export class Vertex {
-  constructor(x, y, dx, dy, radius) {
+  constructor(x, y, dx, dy, radius, color) {
     this.x = x;
     this.y = y;
     this.dx = dx;
     this.dy = dy;
     this.radius = radius;
-    this.color = "#00FF00";
+    this.color = color; //original: #00FF00
   }
 
   createVertex() {
@@ -44,10 +44,10 @@ export class Vertex {
         c.beginPath();
         c.moveTo(this.x, this.y);
         c.lineTo(vertexArray[i].x, vertexArray[i].y);
-        c.strokeStyle = "blue";
+        c.strokeStyle = "white";
         c.stroke();
-        c.shadowBlur = 10;
-        c.shadowColor = "blue";
+        c.shadowBlur = 5;
+        c.shadowColor = "white";
       }
     }
     this.createVertex();

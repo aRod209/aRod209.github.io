@@ -9,6 +9,7 @@ canvas.height = window.innerHeight;
 export var c = canvas.getContext("2d");
 export var vertexArray = [];
 var arraySize;
+var vertexColors = ["#E5BBE5", "#9CF4B8", "#A20DF3", "#3AF18F", "#00FF00"];
 
 /* ***** Event listeners ***** */
 
@@ -20,7 +21,8 @@ document.getElementById("home").addEventListener("click", function (event) {
       event.clientY,
       Math.random() - 0.5,
       Math.random() - 0.5,
-      5
+      (Math.random() * 4) + 2,
+      vertexColors[Math.floor(Math.random() * vertexColors.length)]
     )
   );
 });
@@ -56,11 +58,12 @@ function animate() {
 function init() {
   arraySize = getNumVertices();
   for (let i = 0; i < arraySize; i++) {
-    let radius = 5;
+    let radius = (Math.random() * 4) + 2;
     let x = randomIntFromRange(radius, window.innerWidth - radius);
     let y = randomIntFromRange(radius, window.innerHeight - radius);
     let dx = Math.random() - 0.5;
     let dy = Math.random() - 0.5;
+    let color = vertexColors[Math.floor(Math.random() * vertexColors.length)];
 
     if (i !== 0) {
       for (let j = 0; j < vertexArray.length; j++) {
@@ -71,7 +74,7 @@ function init() {
       }
     }
 
-    vertexArray.push(new Vertex(x, y, dx, dy, radius));
+    vertexArray.push(new Vertex(x, y, dx, dy, radius, color));
   }
   animate();
 }

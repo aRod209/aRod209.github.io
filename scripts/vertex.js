@@ -44,7 +44,7 @@ export class Vertex {
         c.beginPath();
         c.moveTo(this.x, this.y);
         c.lineTo(vertexArray[i].x, vertexArray[i].y);
-        c.strokeStyle = this.color;
+        c.strokeStyle = "white";
         c.stroke();
         c.shadowBlur = 5;
         c.shadowColor = this.color;

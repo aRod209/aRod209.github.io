@@ -9,7 +9,7 @@ canvas.height = window.innerHeight;
 export var c = canvas.getContext("2d");
 export var vertexArray = [];
 var arraySize;
-var vertexColors = ["#FFB5D0", "#A20DF3", "#3AF18F", "#00B2FF"];
+var vertexColors = ["#A20DF3", "#3AF18F", "#00B2FF"];
 
 /* ***** Event listeners ***** */
 

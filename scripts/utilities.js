@@ -1,10 +1,17 @@
 /* ***** Utility functions ***** */
 
 // Returns Euclidean distance
-export function distance(x1, y1, x2, y2) {
+function distance(x1, y1, x2, y2) {
     let xDistance = x2 - x1;
     let yDistance = y2 - y1;
     return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
+}
+
+// Determines whether two vertices are close enough to be
+// connected with an edge
+export function withinDistance(vertexA, vertexB) {
+    let currentDistance = distance(vertexA.x, vertexA.y, vertexB.x, vertexB.y);
+    return currentDistance <= vertexA.radius + vertexB.radius + 140;
 }
 
 // Returns random int

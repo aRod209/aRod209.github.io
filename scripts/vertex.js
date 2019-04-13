@@ -1,6 +1,6 @@
 /* ***** Import statements ***** */
 import { c, vertexArray } from './graph.js';
-import { distance } from './utilities.js';
+import { withinDistance } from './utilities.js';
 
 export class Vertex {
   constructor(x, y, dx, dy, radius, color) {
@@ -36,11 +36,8 @@ export class Vertex {
 
     for (let i = 0; i < vertexArray.length; i++) {
       if (this === vertexArray[i]) continue;
-
-      if (
-        distance(this.x, this.y, vertexArray[i].x, vertexArray[i].y) <=
-        this.radius + vertexArray[i].radius + 140
-      ) {
+      // If withinDistance, then connect with an edge
+      if (withinDistance(this, vertexArray[i])) {
         c.beginPath();
         c.moveTo(this.x, this.y);
         c.lineTo(vertexArray[i].x, vertexArray[i].y);

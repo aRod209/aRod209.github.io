@@ -10,8 +10,9 @@ export function distance(x1, y1, x2, y2) {
 // Determines whether two vertices are close enough to be
 // connected with an edge
 export function withinDistance(vertexA, vertexB) {
+    let maxEdgeLength = 140;
     let currentDistance = distance(vertexA.x, vertexA.y, vertexB.x, vertexB.y);
-    return currentDistance <= vertexA.radius + vertexB.radius + 140;
+    return currentDistance <= vertexA.radius + vertexB.radius + maxEdgeLength;
 }
 
 // Returns random int

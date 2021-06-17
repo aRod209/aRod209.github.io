@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Anthony Rodriguez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anthony Rodriguez | Computer Programmer and Scholar</title>
+    <link rel="stylesheet" href="./styles/projectsStyle.css" />
+    <link rel="stylesheet" href="./styles/portfolioStyle.css" />
+    <link rel="stylesheet" href="./styles/portfolioMediaStyles.css" />
+    <link rel="stylesheet" href="./styles/navStyle.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <h5 style="background: rgb(3, 167, 52); text-align: center; color: #ffffff">
+        Attention Recruiters: All course projects are in private repositories.
+        If you would like to see course project code, please request via email.
+    </h5>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a id="about-anchor" href="portfolio.html#about-section">About</a>
+        <a class="dropdown-btn" id="projects-anchor" href="javascript:void(0)">
+            Course Projects <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-container">
+            <a class="dropdown-text" href="#61a-section">CS 61A</a>
+            <a class="dropdown-text" href="#61b-section">CS 61B</a>
+            <a class="dropdown-text" href="#61c-section">CS 61C</a>
+            <a class="dropdown-text" href="#161-section">CS 161</a>
+            <a class="dropdown-text" href="#188-section">CS 188</a>
+        </div>
+        <a class="dropdown-btn" id="projects-anchor" href="javascript:void(0)">
+            Resume <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-container">
+            <a href="SE_Resume.pdf" target="_blank">Software Engineer Resume</a>
+            <a href="DS_Resume.pdf" target="_blank">Data Science Resume</a>
+        </div>
+        <a id="contact-anchor" href="portfolio.html#contact-section">Contact</a>
+    </div>
+
+    <i class="fas fa-bars nav-bars" onclick="openNav()"></i>
+    <h1 class="display-1 section-head" id="page-header">Course Projects</h1>
+
+    <!--CS 61A Projects Section-->
+    <section class="course-section" id="61a-section">
+        <!-- Use any element to open the sidenav -->
+        <h1 class="display-2 section-head" id="a61-header">CS61A: Structure and
+            Interpretation of Computer Programs</h1>
+        <div id="section-content" style="background-color: rgb(37, 112, 216);">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Hog</h3>
+                            <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/hog/" target="_blank">
+                                <img class="project-image" src="./images/dice.png" alt="dice">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://cs61a.org/" target="_blank" style="color: #ffffff">
+                                    CS 61A: <i>Structure and Interpretation of Computer Programs</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language:</b> Python</p>
+                            <p class="project-descriptor"><b>Description:</b> Developed a simulator and multiple
+                                strategies
+                                for a dice game named Hog. The purpose of this project was
+                                for the student to use control statements and higher-order functions.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Yelp Maps</h3>
+                            <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/maps/" target="_blank">
+                                <img class="project-image" src="./images/yelpMaps.png" alt="yelp map">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://cs61a.org/" target="_blank" style="color: #ffffff">
+                                    CS 61A: <i>Structure and Interpretation of
+                                        Computer Programs</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language:</b> Python</p>
+                            <p class="project-descriptor"><b>Description:</b> Created a visualization of restaurant
+                                ratings using machine learning and the Yelp academic dataset.
+                                In this visualization, Berkeley is segmented into regions,
+                                where each region is shaded by the predicted rating of the
+                                closest restaurant. The visualization is a Varoni Diagram.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center;">Ants VS SomeBees</h3>
+                            <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/ants/" target="_blank">
+                                <img class="project-image" src="./images/antssomebees.png" alt="ants vs somebees">
+                            </a>
+
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://cs61a.org/" target="_blank" style="color: #ffffff">
+                                    CS 61A: <i>Structure and Interpretation of
+                                        Computer Programs</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language:</b> Python</p>
+                            <p class="project-descriptor"><b>Description:</b> Created a tower defense game called
+                                Ants Vs. SomeBees. This project combines functional and object-oriented programming
+                                paradigms. <br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Scheme Interpreter</h3>
+                            <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/scheme/" target="_blank">
+                                <img class="project-image" src="./images/money_tree.png" alt="scheme money tree">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://cs61a.org/" target="_blank" style="color: #ffffff">
+                                    CS 61A: <i>Structure and Interpretation of
+                                        Computer Programs</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language:</b> Python</p>
+                            <p class="project-descriptor"><b>Description:</b> Developed an interpreter for a
+                                subset of the Scheme language.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CS 61B Projects Section-->
+    <section class="course-section" id="61b-section">
+        <!-- Use any element to open the sidenav -->
+        <i class="fas fa-bars nav-bars" onclick="openNav()"></i>
+        <h1 class="display-2 section-head" id="b61-header">CS 61B: Data Structures</h1>
+        <div id="section-content" style="background-color: rgb(37, 112, 216);">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">N Body</h3>
+                            <a href="https://sp18.datastructur.es/materials/proj/proj0/proj0" target="_blank">
+                                <img class="project-image" src="./images/nbody.jpg" alt="galaxy">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://sp18.datastructur.es/" target="_blank" style="color: #ffffff">
+                                    CS 61B: <i>Data Structures</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language: </b>Java</p>
+                            <p class="project-descriptor"><b>Description:</b>This program simulates the
+                                motion of N objects in a plane, accounting for the gravitational forces
+                                mutually affecting each object as demonstrated by the Law of Universal
+                                Gravitation.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Data Structures / Applying and Testing Data Structures</h3>
+                            <a href="https://sp18.datastructur.es/materials/proj/proj1a/proj1a" target="_blank">
+                                <img class="project-image" src="./images/dequeue.png" alt="dequeue">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://sp18.datastructur.es/" target="_blank" style="color: #ffffff">
+                                    CS 61B: <i>Data Structures</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language: </b>Java</p>
+                            <p class="project-descriptor"><b>Description:</b> Built implementations of a
+                                “Double Ended Queue” using both lists and arrays.
+                                Then implemented an interface for
+                                double-ended queues to help create a palindrome finder.
+                                Also, extensively used JUnit for unit-testing the implementation.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">CS61BYoG</h3>
+                            <a href="https://sp18.datastructur.es/materials/proj/proj2/proj2" target="_blank">
+                                <img class="project-image" src="./images/byob.png" alt="game">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://sp18.datastructur.es/" target="_blank" style="color: #ffffff">
+                                    CS 61B: <i>Data Structures</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language: </b>Java</p>
+                            <p class="project-descriptor"><b>Description:</b> Created an engine which
+                                generated explorable worlds in a 2-D tile-based video game.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Bear Maps</h3>
+                            <a href="https://sp18.datastructur.es/materials/proj/proj3/proj3" target="_blank">
+                                <img class="project-image" src="./images/bearmaps.png" alt="map">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://sp18.datastructur.es/" target="_blank" style="color: #ffffff">
+                                    CS 61B: <i>Data Structures</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language: </b>Java</p>
+                            <p class="project-descriptor"><b>Description:</b> A web-application where I used
+                                graph algorithms, and an Open Street Map data set to implement the backend
+                                of a web server that generates a map of the city of Berkeley.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--CS 61C Projects Section-->
+    <section class="course-section" id="61c-section">
+        <!-- Use any element to open the sidenav -->
+        <i class="fas fa-bars nav-bars" onclick="openNav()"></i>
+        <h1 class="display-2 section-head" id="b61-header">CS 61C: Great Ideas in Computer Architecture (Machine
+            Structures)</h1>
+        <div id="section-content" style="background-color: rgb(37, 112, 216);">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-2">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Mandelbrot Fractal Zoomer</h3>
+                            <a href="https://cs61c.org/projects/proj1/" target="_blank">
+                                <img class="project-image" src="./images/220px-Mandelbrot_sequence_new.gif"
+                                    alt="mandelbrot">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://cs61c.org/" target="_blank" style="color: #ffffff">
+                                    CS 61C: <i>Machine Structures</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language: </b>C</p>
+                            <p class="project-descriptor"><b>Description:</b> Implemented a Complex Number
+                                data type and the Mandelbrot function and translated the output into an image.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">CS61Classify</h3>
+                            <a href="https://cs61c.org/projects/proj2/" target="_blank">
+                                <img class="project-image" src="./images/neuron.png" alt="artificial nueron">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://cs61c.org/" target="_blank" style="color: #ffffff">
+                                    CS 61C: <i>Machine Structures</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language: </b>RISC-V</p>
+                            <p class="project-descriptor"><b>Description:</b> Implemented functions which
+                                operated on matrices and vectors. Then used these functions to construct
+                                a simple Artificial Nueral Net for digit classification.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CS 161 Projects Section-->
+    <section class="course-section" id="161-section">
+        <!-- Use any element to open the sidenav -->
+        <i class="fas fa-bars nav-bars" onclick="openNav()"></i>
+        <h1 class="display-2 section-head" id="b61-header">CS 161: Computer Security</h1>
+        <div id="section-content" style="background-color: rgb(37, 112, 216);">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Encrypted File Sharing System</h3>
+                            <a href="https://fa20.cs161.org/assets/projects/2/project2-spec.pdf" target="_blank">
+                                <img class="project-image" src="./images/cs161logo.gif" alt="classifier">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://fa20.cs161.org/" target="_blank"
+                                    style="color: #ffffff">
+                                    CS 161: <i>Computer Security</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language: </b>Go</p>
+                            <p class="project-descriptor"><b>Description:</b> Used Go and cryptographic primitives 
+                                to implement the client of a file sharing system. The system is to ensure 
+                                confidentiality and integrity of all files and access tokens.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CS 188 Projects Section-->
+    <section class="course-section" id="188-section">
+        <!-- Use any element to open the sidenav -->
+        <i class="fas fa-bars nav-bars" onclick="openNav()"></i>
+        <h1 class="display-2 section-head" id="b61-header">CS 188: Introduction to Artificial Intelligence</h1>
+        <div id="section-content" style="background-color: rgb(37, 112, 216);">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-2">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Pacman Projects</h3>
+                            <a href="http://inst.eecs.berkeley.edu/~cs188/fa19/projects/" target="_blank">
+                                <img class="project-image" src="./images/pacman_multi_agent.png" alt="pacman">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://inst.eecs.berkeley.edu/~cs188/fa19/" target="_blank"
+                                    style="color: #ffffff">
+                                    CS 188: <i>Introduction to Artificial Intelligence</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language: </b>Python</p>
+                            <p class="project-descriptor"><b>Description:</b> The Pacman Projects apply an array of
+                                multiple AI techniques such as informed state-space search, probabilistic inference,
+                                and reinforcement learning to perform a series of Pacman actions that yield the optimal
+                                expected outcome to the goal state.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project-descriptions">
+                            <h3 style="text-align: center">Machine Learning</h3>
+                            <a href="http://inst.eecs.berkeley.edu/~cs188/fa19/project5/" target="_blank">
+                                <img class="project-image" src="./images/ml_project_teaser.png" alt="classifier">
+                            </a>
+                            <p class="project-descriptor"><b>Course:</b>
+                                <a href="https://inst.eecs.berkeley.edu/~cs188/fa19/" target="_blank"
+                                    style="color: #ffffff">
+                                    CS 188: <i>Introduction to Artificial Intelligence</i>
+                                </a>
+                            </p>
+                            <p class="project-descriptor"><b>Language: </b>Python</p>
+                            <p class="project-descriptor"><b>Description:</b> Used a provided framework to create
+                                nueral networks that solved classic machine learning problems such as digit
+                                classification,
+                                and language identification.<br><br>
+                                Most updated version is in a private repository.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="color: rgb(37, 112, 216); text-align: center;">
+        <b>This website was developed and designed by Anthony Rodriguez</b>
+    </footer>
+    <script src="./scripts/nav.js"></script>
+</body>
+
+</html>
